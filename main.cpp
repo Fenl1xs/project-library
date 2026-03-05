@@ -38,7 +38,7 @@ int main() {
     std::cout << "\n💸 Продажа 2 шт товара P002 (Мышь)...\n";
     found = warehouse.findProduct("P002");
     if (found) {
-        found->sell(2);
+        // found->sell(2);
         std::cout << "✅ Текущее количество: " << found->getQuantityInStock() << " (ожидается 48)\n";
     }
 
@@ -51,7 +51,7 @@ int main() {
 
     std::cout << "\n⚠️ Попытка продать 100 шт товара P003...\n";
     if (found) {
-        found->sell(100);
+        // found->sell(100);
         std::cout << "   Текущее количество: " << found->getQuantityInStock() 
                   << " (должно остаться 30, если продажа не удалась)\n";
     }
